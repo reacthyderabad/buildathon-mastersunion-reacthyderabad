@@ -7,7 +7,7 @@
 **Name:** Sai Vamshi
 **GitHub Username:** saivamshi4212
 **LinkedIn Profile:** https://www.linkedin.com/in/saivamshi-webdev/
-**GitHub Project Repository:** [Your Repository URL]
+**GitHub Project Repository:** https://github.com/saivamshi4121/opssage.git
 
 ---
 
