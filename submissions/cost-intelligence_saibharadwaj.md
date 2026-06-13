@@ -5,16 +5,17 @@
 ## Attendee Details
 
 **Name:** Sai Bharadwaj Chintalpati
-**GitHub Username:** foundersai
+**Email:** founder@stagsterlabs.com
+**GitHub Username:** stagster
 **LinkedIn Profile:** https://linkedin.com/in/saibharadwaj
 **Phone:** 8125465959
-**GitHub Project Repository:** https://github.com/foundersai/cost-intelligence
+**GitHub Project Repository:** https://github.com/stagster/cost-intelligence
 
 ---
 
 ## Problem Statement Selected
 
-**AI Business Growth Copilot** — HR Cost Intelligence Engine
+**HR Cost Intelligence Engine**
 
 ---
 
