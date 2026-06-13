@@ -6,6 +6,21 @@ type MentionArgs = SlackEventMiddlewareArgs<"app_mention"> & AllMiddlewareArgs;
 
 export async function handleMention(args: MentionArgs): Promise<void> {
   const { event, say } = args;
+  const maybeFileShareEvent = event as typeof event & {
+    subtype?: string;
+    files?: unknown[];
+  };
+
+  // Slack may emit app_mention with file_share context. Let file_shared handler own indexing.
+  if (
+    maybeFileShareEvent.subtype === "file_share" ||
+    (maybeFileShareEvent.files?.length ?? 0) > 0
+  ) {
+    // eslint-disable-next-line no-console
+    console.log("[mention] skipping file_share-style mention event");
+    return;
+  }
+
   const question = event.text ?? "";
   const threadTs = event.thread_ts ?? event.ts;
   // eslint-disable-next-line no-console

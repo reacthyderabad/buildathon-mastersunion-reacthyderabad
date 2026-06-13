@@ -34,6 +34,8 @@ export function buildSourcesBlock(citations: Citation[]): string {
   if (citations.length === 0) {
     return "";
   }
-  const lines = citations.map((c) => `- ${c.sourceName} chunk ${c.chunkIndex}`);
+  const lines = citations.map((c) =>
+    c.sourceUrl ? `- <${c.sourceUrl}|${c.sourceName}>` : `- ${c.sourceName}`,
+  );
   return `\n\nSources:\n${lines.join("\n")}`;
 }

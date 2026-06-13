@@ -11,6 +11,7 @@ type SlackFile = {
   name: string;
   mimetype?: string;
   url_private_download?: string;
+  permalink?: string;
 };
 
 async function downloadSlackFile(file: SlackFile): Promise<Buffer> {
@@ -64,6 +65,7 @@ export async function handleFileShared(args: FileSharedArgs): Promise<void> {
         ingestionInput: {
           sourceType: "pdf",
           sourceName: file.name ?? `${file.id}.pdf`,
+          sourceUrl: file.permalink,
           fileBuffer: buffer,
         },
       });

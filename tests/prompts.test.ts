@@ -11,11 +11,11 @@ test("sources block renders citations", () => {
   const block = buildSourcesBlock([
     {
       sourceName: "HR_Policy.pdf",
-      chunkIndex: 1,
+      sourceUrl: "https://example.slack.com/files/abc",
       sourcePath: "storage/uploads/x",
     },
   ]);
 
   assert.ok(block.includes("Sources:"));
-  assert.ok(block.includes("HR_Policy.pdf chunk 1"));
+  assert.ok(block.includes("<https://example.slack.com/files/abc|HR_Policy.pdf>"));
 });

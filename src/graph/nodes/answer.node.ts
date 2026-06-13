@@ -11,14 +11,16 @@ function toCitations(state: GraphState): Citation[] {
   const citations: Citation[] = [];
 
   for (const chunk of chunks) {
-    const key = `${chunk.sourceName}:${chunk.chunkIndex}`;
+    const key = chunk.sourceUrl
+      ? `${chunk.sourceName}:${chunk.sourceUrl}`
+      : `${chunk.sourceName}:${chunk.sourcePath}`;
     if (seen.has(key)) {
       continue;
     }
     seen.add(key);
     citations.push({
       sourceName: chunk.sourceName,
-      chunkIndex: chunk.chunkIndex,
+      sourceUrl: chunk.sourceUrl,
       sourcePath: chunk.sourcePath,
       page: chunk.page,
     });
@@ -53,6 +55,6 @@ export async function answerNode(state: GraphState): Promise<GraphState> {
   return {
     ...state,
     answer,
-    citations: citations.map((c) => `${c.sourceName} chunk ${c.chunkIndex}`),
+    citations: citations.map((c) => c.sourceUrl ?? c.sourceName),
   };
 }

@@ -54,6 +54,7 @@ export class IngestionService {
         id: uuidv4(),
         documentId,
         sourceName: input.sourceName,
+        sourceUrl: input.sourceUrl,
         sourceType: input.sourceType as SourceType,
         sourcePath: persisted.sourcePath,
         extractedTextPath: persisted.extractedTextPath,

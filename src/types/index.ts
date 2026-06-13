@@ -12,6 +12,7 @@ export type ChunkRecord = {
   id: string;
   documentId: string;
   sourceName: string;
+  sourceUrl?: string;
   sourceType: SourceType;
   sourcePath: string;
   extractedTextPath: string;
@@ -26,7 +27,7 @@ export type ChunkRecord = {
 
 export type Citation = {
   sourceName: string;
-  chunkIndex: number;
+  sourceUrl?: string;
   sourcePath: string;
   page?: number;
 };
@@ -39,6 +40,7 @@ export type IngestionInput =
   | {
       sourceType: "pdf";
       sourceName: string;
+      sourceUrl?: string;
       fileBuffer: Buffer;
       text?: string;
     }
@@ -46,11 +48,13 @@ export type IngestionInput =
       sourceType: "url";
       sourceName: string;
       url: string;
+      sourceUrl?: string;
     }
   | {
       sourceType: "text";
       sourceName: string;
       text: string;
+      sourceUrl?: string;
     };
 
 export type IngestionResult = {
