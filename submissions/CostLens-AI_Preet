@@ -1,0 +1,354 @@
+# Project Name
+
+CostLens-AI
+
+---
+
+## Attendee Details
+
+**Name:** Preet Bhavsar
+**GitHub Username:** preet-bhavsar
+**LinkedIn Profile:** https://www.linkedin.com/in/preet-bhavsar5/
+**GitHub Project Repository:** https://github.com/preet-bhavsar/CostLens-AI
+
+---
+
+# Problem Statement Selected
+
+## HR Cost Intelligence Engine
+
+---
+
+# Project Description
+
+## CostLens AI – HR Cost Intelligence Engine
+
+CostLens AI is an AI-powered workforce cost intelligence platform that helps organizations understand how employee meeting time translates into project spending.
+
+Modern companies spend thousands of employee hours in meetings, but finance and leadership teams rarely know which projects are consuming those resources. Traditional timesheets are often inaccurate, incomplete, or ignored entirely.
+
+CostLens AI solves this problem by integrating directly with Google Calendar, automatically analyzing meetings using Gemini AI, attributing them to projects, calculating workforce costs, and generating real-time project expenditure insights.
+
+The platform is designed for:
+
+* Engineering organizations
+* Project managers
+* HR teams
+* Finance teams
+* Business leaders
+
+By turning calendar activity into actionable cost intelligence, CostLens AI enables organizations to improve budget visibility, detect inefficiencies, and make better resource allocation decisions.
+
+---
+
+# Approach
+
+We approached the problem by focusing on a simple but powerful idea:
+
+**Every meeting represents employee time, and employee time has a cost.**
+
+### Understanding the Problem
+
+The main challenge was connecting three disconnected data sources:
+
+1. Employee meetings
+2. Project allocation
+3. Workforce costs
+
+Most organizations track payroll separately from project execution, making project-level cost visibility extremely difficult.
+
+### User Flow
+
+1. User logs in using Google Authentication.
+2. User connects Google Calendar.
+3. Calendar events are synchronized.
+4. Gemini AI analyzes meeting context.
+5. Meetings are automatically mapped to projects.
+6. Employee hourly costs are applied.
+7. Costs are aggregated across projects.
+8. AI Insights and dashboards provide recommendations and anomaly detection.
+
+### AI Usage
+
+Gemini AI is used to:
+
+* Classify meetings into projects
+* Generate confidence scores
+* Detect ambiguous project attribution
+* Produce executive summaries
+* Generate cost optimization recommendations
+
+### What Makes Our Solution Different
+
+Unlike traditional project tracking systems, CostLens AI does not depend on manual timesheets.
+
+Instead, it uses existing calendar activity as the source of truth and transforms it into:
+
+* Project-level cost visibility
+* Workforce utilization analytics
+* Budget risk detection
+* Executive intelligence dashboards
+
+This significantly reduces manual effort while improving accuracy.
+
+---
+
+# Tech Stack and Tools Used
+
+### Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+* Recharts
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* Local Storage / Application Storage Layer
+* Ready for Supabase or PostgreSQL integration
+
+### AI Tools/API
+
+* Google Gemini API
+* Gemini 2.5 Flash
+
+### Cloud/Deployment
+
+* Google Cloud Platform
+* Google OAuth Platform
+
+### Other Tools
+
+* Google Calendar API
+* Cursor AI
+* Antigravity AI
+* GitHub
+* Postman
+* VS Code
+
+---
+
+# Key Features
+
+1. Google OAuth Authentication
+2. Google Calendar Integration
+3. AI-Based Project Attribution
+4. Gemini-Powered Meeting Classification
+5. Workforce Cost Calculation Engine
+6. Real-Time Project Cost Aggregation
+7. Cost Analytics Dashboard
+8. AI Budget Insights
+9. Executive Summary Generation
+10. Confidence-Based Meeting Attribution
+11. Cost Trend Visualization
+12. Anomaly Detection Framework
+13. Project-Level Spend Tracking
+14. Role-Based Workforce Cost Modeling
+15. Cached AI Inference for Reduced API Usage
+
+---
+
+# What is Working?
+
+### Authentication
+
+* Google Login
+* User Session Management
+
+### Calendar Integration
+
+* Google Calendar Sync
+* Event Retrieval
+* Meeting Listing
+
+### AI Attribution
+
+* Gemini-based project classification
+* Confidence scoring
+* Cached classification results
+
+### Cost Engine
+
+* Employee hourly rate mapping
+* Meeting cost calculation
+* Project cost aggregation
+
+### Dashboard
+
+* Executive summary
+* Workforce metrics
+* KPI cards
+
+### Cost Analytics
+
+* Cost-by-project charts
+* Meeting-hour analytics
+* High-cost meeting identification
+
+### AI Insights
+
+* Budget risk detection
+* Low-confidence meeting identification
+* Optimization recommendations
+* Potential savings analysis
+
+### Project Analytics
+
+* Project spend tracking
+* Meeting counts
+* Resource allocation insights
+
+---
+
+# What is Still in Progress?
+
+### Settings Module
+
+* Organization configuration
+* Dynamic role management
+* Threshold customization
+
+### Event Creation
+
+* Create Google Calendar events directly from CostLens AI
+
+### Enterprise Demo Data Generator
+
+* One-click realistic corporate dataset generation
+
+### Advanced Anomaly Engine
+
+* Meeting overload detection
+* Cost spike detection
+* Spending anomaly detection
+
+### Report Exporting
+
+* PDF reports
+* Executive summaries
+* Budget reports
+
+### Multi-User Collaboration
+
+* Team-level access controls
+* Shared dashboards
+
+---
+
+# Screenshots or Demo
+
+### Deployed Link
+
+Coming Soon
+
+### Demo Video Link
+
+Coming Soon
+
+### Screenshots
+
+Include:
+
+1. Login Page
+2. Dashboard
+3. Calendar Integration
+4. Project Analytics
+5. Cost Analytics
+6. AI Insights
+7. Settings Page
+
+---
+
+# Challenges Faced
+
+### Google OAuth Configuration
+
+Managing OAuth scopes, consent screens, and API permissions required significant setup and debugging.
+
+### Calendar Data Interpretation
+
+Meeting titles are often vague, making project attribution difficult.
+
+### AI Classification Accuracy
+
+Balancing attribution confidence while minimizing incorrect project assignments was challenging.
+
+### Cost Modeling
+
+Creating realistic workforce cost calculations without accessing actual payroll systems required a flexible abstraction layer.
+
+### Performance Optimization
+
+Repeated AI calls increased latency and costs, leading to the implementation of classification caching.
+
+---
+
+# Learnings
+
+During the development of CostLens AI, we learned:
+
+* Google OAuth and Calendar API integration
+* Real-world AI workflow design
+* Prompt engineering for enterprise use cases
+* Cost intelligence system architecture
+* Workforce analytics concepts
+* Dashboard design for decision-makers
+* Data aggregation and anomaly detection techniques
+* Performance optimization through AI caching
+
+---
+
+# Future Improvements
+
+If given more time, we would implement:
+
+### Advanced AI Features
+
+* Predictive budget forecasting
+* Cost trend prediction
+* Workforce utilization forecasting
+
+### Enterprise Integrations
+
+* Microsoft Outlook
+* Microsoft Teams
+* Jira
+* Asana
+* SAP
+* Workday
+
+### Reporting
+
+* PDF exports
+* Automated executive reports
+* Weekly cost summaries
+
+### Security
+
+* Role-based access control
+* Organization-wide permissions
+* Audit logging
+
+### Analytics
+
+* Department-level insights
+* Employee utilization analytics
+* ROI tracking
+
+---
+
+# Final Note
+
+CostLens AI was built to address a real and often overlooked enterprise challenge: understanding where workforce time and project costs actually go.
+
+Rather than relying on manual timesheets, our solution leverages existing calendar activity and AI-powered attribution to create a transparent, automated, and scalable cost intelligence platform.
+
+We believe the future of workforce analytics lies in passive intelligence systems that reduce administrative overhead while increasing visibility and decision-making quality.
+
+CostLens AI is our step toward that future.
