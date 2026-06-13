@@ -1,0 +1,208 @@
+## Attendee Details
+
+**Name:** Priyanshi Vadodariya
+**GitHub Username:** priynshi10
+**LinkedIn Profile:** https://www.linkedin.com/in/priyanshivadodariya/
+**GitHub Project Repository:** https://github.com/priynshi10
+
+---
+
+# Problem Statement Selected
+
+HR Cost Intelligence Engine
+
+---
+
+# Project Description
+
+## WorkPulse AI – Workforce Cost Intelligence Platform
+
+WorkPulse AI is an AI-powered HR Cost Intelligence Engine that helps organizations understand how employee time and workforce costs are distributed across projects.
+
+The platform integrates with Google Calendar and Outlook Calendar, automatically analyzes meetings using AI, attributes them to projects, calculates workforce costs, and provides real-time executive insights through interactive dashboards.
+
+It is designed for HR teams, Finance teams, Project Managers, Operations leaders, and Executives who need visibility into workforce utilization and project-level expenditure.
+
+Traditional organizations rely on manual timesheets and spreadsheets, which are often inaccurate and time-consuming. WorkPulse AI eliminates this problem by transforming calendar activity into actionable business intelligence.
+
+---
+
+# Approach
+
+We approached the problem by identifying calendar data as the most reliable and underutilized source of workforce activity.
+
+Our solution follows this workflow:
+
+1. Connect organizational calendars through Google Calendar or Outlook.
+2. Collect meeting metadata including title, description, attendees, organizer, duration, and recurrence patterns.
+3. Use AI-powered project attribution to identify which project or workstream each meeting belongs to.
+4. Map employee designations and salary bands to estimated hourly costs.
+5. Calculate project-level workforce expenditure automatically.
+6. Display insights through an executive dashboard.
+7. Detect anomalies such as budget overruns, meeting overload, and unattributed meetings.
+8. Provide forecasting and AI-generated recommendations for workforce optimization.
+
+AI is used for:
+
+* Project attribution
+* Meeting classification
+* Cost forecasting
+* Executive insights generation
+* Meeting waste detection
+* Natural language business queries through AI Copilot
+
+What makes our solution unique is that it transforms passive calendar data into a real-time workforce intelligence system, helping organizations make better operational and financial decisions.
+
+---
+
+# Tech Stack and Tools Used
+
+### Frontend:
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Recharts
+* Shadcn UI
+
+### Backend:
+
+* FastAPI
+* Python
+
+### Database:
+
+* PostgreSQL
+
+### AI Tools/API:
+
+* OpenAI GPT
+* LangChain
+
+### Cloud/Deployment:
+
+* Vercel
+* Render
+
+### Other Tools:
+
+* Cursor AI
+* GitHub
+* Figma
+* Postman
+* Google Calendar API
+* Microsoft Graph API
+
+---
+
+# Key Features
+
+1. Google Calendar and Outlook Calendar Integration
+2. AI-Powered Project Attribution Engine
+3. Workforce Cost Calculation Engine
+4. Executive Analytics Dashboard
+5. Real-Time HR Cost Visibility
+6. AI Anomaly Detection
+7. Meeting Waste Detector
+8. Workforce Cost Forecasting
+9. AI Executive Copilot
+10. Project Cost Breakdown and Utilization Analytics
+
+---
+
+# What is Working?
+
+* Calendar integration workflow
+* Meeting data ingestion
+* AI-powered project attribution
+* Workforce cost calculations
+* Executive dashboard with KPIs
+* Project-wise cost breakdown
+* Team utilization analytics
+* AI-generated recommendations
+* Anomaly detection alerts
+* Interactive visualizations and charts
+
+---
+
+# What is Still in Progress?
+
+* Advanced forecasting models
+* Outlook calendar synchronization improvements
+* PDF and Excel report generation
+* Enhanced AI Copilot reasoning
+* Multi-organization support
+* Additional third-party integrations such as Jira and Slack
+
+---
+
+# Screenshots or Demo
+
+### Deployed Link:
+
+https://your-demo-link.com
+
+### Demo Video Link:
+
+https://your-demo-video-link.com
+
+### Screenshots:
+
+* Landing Page
+* Calendar Integration
+* Executive Dashboard
+* AI Attribution Dashboard
+* Cost Analytics Dashboard
+* AI Copilot Interface
+
+---
+
+# Challenges Faced
+
+* Mapping meeting context to projects accurately
+* Designing a scalable attribution engine
+* Handling ambiguous meeting information
+* Creating realistic workforce cost calculations without payroll integration
+* Building a clean executive dashboard with meaningful insights
+* Balancing AI explainability with prediction accuracy
+* Managing data privacy and access control considerations
+
+---
+
+# Learnings
+
+Through this project, we learned:
+
+* Calendar data can be a powerful source of workforce intelligence.
+* AI can significantly reduce manual project tracking efforts.
+* Financial analytics becomes more valuable when connected to operational activity.
+* Building enterprise-grade dashboards requires careful UX and data visualization design.
+* Explainable AI is essential for executive decision-making tools.
+
+---
+
+# Future Improvements
+
+If given more time, we would add:
+
+* Jira, Asana, and Slack integrations
+* Payroll system integration
+* Team productivity analytics
+* AI-based workforce optimization recommendations
+* Department-level benchmarking
+* Advanced forecasting using historical trends
+* Mobile application support
+* Multi-tenant enterprise deployment
+
+---
+
+# Final Note
+
+WorkPulse AI reimagines how organizations understand workforce investment.
+
+Instead of relying on manual timesheets and fragmented reporting, our platform automatically transforms calendar activity into actionable cost intelligence, project visibility, and executive insights.
+
+Our vision is to help organizations make smarter workforce decisions through AI-powered analytics while improving transparency, efficiency, and resource allocation across projects.
+
+WorkPulse AI turns meetings into measurable business value.
