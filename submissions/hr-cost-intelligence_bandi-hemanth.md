@@ -7,7 +7,7 @@
 **Name:** Bandi Hemanth
 **GitHub Username:** bannu773
 **LinkedIn Profile:** https://www.linkedin.com/in/hemanth-bandi-835280211/
-**GitHub Project Repository:** https://github.com/bannu773/buildathon-mastersunion-reacthyderabad
+**GitHub Project Repository:** [https://github.com/bannu773/buildathon-mastersunion-reacthyderabad](https://github.com/bannu773/Anamolies-detection-in-meetings-for-HR.git)
 
 ---
 
