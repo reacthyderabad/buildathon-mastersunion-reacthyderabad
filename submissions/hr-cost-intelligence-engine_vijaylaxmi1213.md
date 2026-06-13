@@ -4,9 +4,9 @@
 
 ## Attendee Details
 
-**Name:** _(your full name)_
+**Name:**  Vijay laxmi
 **GitHub Username:** vijaylaxmi1213
-**LinkedIn Profile:** _(your LinkedIn profile URL)_
+**LinkedIn Profile:** https://www.linkedin.com/in/vijay-laxmi-meesala-6b5184308/
 **GitHub Project Repository:** https://github.com/vijaylaxmi1213/Cost-Intelligence
 
 ---
@@ -111,9 +111,9 @@ The **HR Cost Intelligence Engine** is a full-stack web application that helps o
 
 ## Screenshots or Demo
 
-**Deployed Link:** _(to be added after deployment)_
-**Demo Video Link:** _(to be added)_
-**Screenshots:** _(to be added)_
+
+**Demo Video Link:** https://drive.google.com/file/d/1Hu5XnBIz52tS5BBfYzjLf8GP-59z3jdg/view?usp=sharing
+
 
 ---
 
