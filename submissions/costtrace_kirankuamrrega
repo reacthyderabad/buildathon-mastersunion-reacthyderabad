@@ -1,0 +1,69 @@
+# Project Name
+costtrace
+
+## Attendee Details
+Name: Kiran Kumar Rega
+GitHub Username: @kiranrega
+LinkedIn Profile: https://linkedin.com/in/kiranrega
+GitHub Project Repository: [To be updated]
+
+## Problem Statement Selected
+HR Cost Intelligence Engine
+
+## Project Description
+The HR Cost Intelligence Engine is an AI-powered tool that connects calendar meeting data to project budgets, giving organizations real-time visibility into how employee time and cost are distributed across projects.
+
+It is built for finance teams, project managers, and leadership who currently have no automated way to see project-level HR expenditure — payroll is tracked as a whole, but cost-per-project is invisible and relies on unreliable manual timesheets.
+
+The tool ingests meeting data (title, attendees, duration, recurrence), uses AI to infer which project each meeting belongs to, maps attendees to hourly cost rates, and aggregates this into a project-wise cost dashboard — flagging low-confidence or unusual cases for human review.
+
+## Approach
+The problem breaks down into four stages: data ingestion, AI-based project attribution, cost computation, and visualization.
+
+For attribution, a hybrid approach is planned: first a fast rule-based keyword match against a project taxonomy (project name + keywords), and only for meetings with no clear match, a call to an LLM (Claude) that classifies the meeting into a project with a confidence score and reasoning, or marks it "Unassigned" if ambiguous.
+
+This hybrid design keeps the system fast and cheap for clear-cut meetings while using AI specifically where it adds value — disambiguating vague titles like "Sync" or "1:1" using attendee and context signals.
+
+Cost is computed per meeting by mapping each attendee's designation to a configurable hourly rate, then aggregated per project for the dashboard. Confidence scores and an "Unassigned" bucket are surfaced so low-confidence attributions can be reviewed rather than silently trusted — directly addressing the "graceful degradation" requirement in the problem statement.
+
+## Tech Stack and Tools Used
+Frontend: React, Vite, TypeScript, Tailwind CSS, shadcn/ui, Recharts, React Query
+Backend: Node.js, Express, TypeScript
+Database: JSON file storage (planned; may move to SQLite/Postgres)
+AI Tools/API: Claude (Anthropic API)
+Cloud/Deployment: Vercel (frontend, planned), Render (backend, planned)
+Other Tools: Turborepo (pnpm monorepo), Claude (used as coding assistant during development)
+
+## Key Features
+1. Calendar meeting data ingestion (mock dataset for prototype)
+2. AI-powered project attribution using keyword rules + LLM classification with confidence scores
+3. Employee-to-cost mapping based on configurable hourly rates
+4. Project cost dashboard with bar chart and drill-down table by project/meeting
+5. Anomaly flags for low-confidence attribution ("Needs Review") and high-cost meetings
+6. "Unassigned" bucket for meetings with no clear project match
+
+## What is Working?
+Nothing implemented yet — project is currently at the planning and architecture stage. Backend API design, data schema, AI attribution prompt, and frontend component plan have been finalized.
+
+## What is Still in Progress?
+Everything: backend setup (Express + Anthropic API integration), mock data generation, frontend dashboard (React + shadcn + Recharts), cost calculation logic, anomaly flagging, and deployment.
+
+## Screenshots or Demo
+Deployed Link: [To be added]
+Demo Video Link: [To be added]
+Screenshots: [To be added]
+
+## Challenges Faced
+[To be filled in after development]
+
+## Learnings
+[To be filled in after development]
+
+## Future Improvements
+- Real Google Calendar / Outlook integration via OAuth
+- Persistent database instead of JSON file storage
+- Human-in-the-loop feedback loop to improve attribution accuracy over time
+- Privacy controls to prevent individual salary exposure in shared/team views
+
+## Final Note
+This submission reflects the planning stage of the project. GitHub repository link and implementation details will be updated once development is complete.
