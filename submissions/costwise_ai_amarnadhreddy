@@ -1,0 +1,144 @@
+# CostWise AI
+
+AI-powered HR Cost Intelligence Engine for smarter workforce planning and cost optimization.
+
+---
+
+## Attendee Details
+
+**Name:** N Amarnadh Reddy
+**GitHub Username:** https://github.com/itsamar971
+**LinkedIn Profile:** https://in.linkedin.com/in/n-amarnadh-reddy
+**GitHub Project Repository:** YOUR_GITHUB_REPOSITORY_LINK
+
+---
+
+## Problem Statement Selected
+
+```txt
+HR Cost Intelligence Engine
+```
+
+---
+
+## Project Description
+
+CostWise AI is an AI-powered SaaS platform designed to help HR teams, founders, and business leaders understand and optimize employee-related costs. The platform integrates workforce data and calendar information to provide intelligent insights, automate reporting, and support better hiring and resource allocation decisions.
+
+It helps organizations reduce unnecessary spending, improve workforce planning, and make data-driven decisions through AI-generated recommendations.
+
+---
+
+## Approach
+
+We started by understanding the challenges organizations face in tracking and analyzing HR expenses. Instead of relying on static spreadsheets, we designed an AI-first platform that combines employee data, schedules, and analytics into a unified dashboard.
+
+Our approach focuses on:
+
+* Building a secure SaaS architecture with authentication and role-based access.
+* Integrating Google Calendar to understand workload and team activities.
+* Using Gemini AI to generate insights and recommendations.
+* Providing real-time dashboards and reports for decision-makers.
+* Creating a scalable backend using TypeScript and Supabase.
+
+The solution aims to simplify workforce cost analysis while making AI-powered insights accessible to businesses.
+
+---
+
+## Tech Stack and Tools Used
+
+**Frontend:** Next.js, React, TypeScript, Tailwind CSS
+
+**Backend:** Node.js, Express, TypeScript
+
+**Database:** Supabase PostgreSQL
+
+**AI Tools/API:** Gemini 2.5 Flash API
+
+**Cloud/Deployment:** Vercel, Render
+
+**Other Tools:** Google OAuth, Google Calendar API, JWT Authentication, Zod, dotenv, CORS, Helmet, Morgan, Postman, GitHub
+
+---
+
+## Key Features
+
+1. Secure authentication using Google OAuth and JWT.
+2. AI-powered HR cost analysis and recommendations.
+3. Google Calendar integration for workload and scheduling insights.
+4. Employee and cost management dashboard.
+5. Automated report generation and intelligent summaries.
+6. Scalable enterprise-ready backend architecture.
+
+---
+
+## What is Working?
+
+* User authentication and authorization.
+* Backend API structure with TypeScript and Express.
+* Supabase PostgreSQL integration.
+* Google OAuth setup.
+* Google Calendar API integration.
+* Gemini AI-based insight generation.
+* Validation and security middleware.
+
+---
+
+## What is Still in Progress?
+
+* Advanced analytics dashboard.
+* Report export functionality.
+* Team collaboration features.
+* Role-based access control enhancements.
+* Email notifications and alerts.
+* Production deployment and performance optimization.
+
+---
+
+## Screenshots or Demo
+
+**Deployed Link:** Coming Soon
+
+**Demo Video Link:** Coming Soon
+
+**Screenshots:** To be added
+
+---
+
+## Challenges Faced
+
+* Configuring Google OAuth and Calendar APIs.
+* Designing a scalable backend architecture.
+* Handling secure authentication and token management.
+* Integrating AI responses with structured business workflows.
+* Managing database schemas and validation effectively.
+
+---
+
+## Learnings
+
+Through this project, we learned:
+
+* Enterprise backend development with Node.js and TypeScript.
+* Authentication using Google OAuth and JWT.
+* Database design with Supabase PostgreSQL.
+* AI integration using Gemini APIs.
+* API validation and security best practices.
+* Building scalable SaaS architectures.
+
+---
+
+## Future Improvements
+
+* Predictive workforce cost forecasting.
+* AI-powered hiring recommendations.
+* Natural language querying for HR analytics.
+* Email and Slack integrations.
+* Multi-tenant support for enterprises.
+* Advanced visualization and reporting capabilities.
+
+---
+
+## Final Note
+
+CostWise AI is built with the vision of making HR cost intelligence accessible and actionable for organizations of all sizes. Our goal is to empower businesses with AI-driven insights that improve workforce efficiency and optimize operational costs.
