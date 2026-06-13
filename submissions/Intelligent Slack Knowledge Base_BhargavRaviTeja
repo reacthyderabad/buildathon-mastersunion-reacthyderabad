@@ -1,0 +1,173 @@
+Project Submission Template
+
+PS#02
+Intelligent Slack Knowledge Base_BhargavRaviTeja.md
+
+# Project Name =  Intelligent Slack Knowledge Base
+
+## Attendee Details
+
+**Name:** Bhargav Ravi Teja
+**GitHub Username:** Bhargav200
+**LinkedIn Profile:** https://www.linkedin.com/in/bhargavraviteja/
+**GitHub Project Repository:** https://github.com/Bhargav200/-Intelligent-Slack-Knowledge-Base_BhargavRaviTeja.git
+---
+
+## Problem Statement Selected
+
+Intelligent Slack Knowledge Base
+Your company's knowledge — searchable, summarisable, and always at hand
+---
+
+## Project Description
+
+Stine Bot is an Intelligent Slack-native AI Knowledge Base assistant that transforms scattered company documentation into a highly queryable, conversational intelligence system. Users can upload various files or text layers directly via Slack or an administrative React dashboard, and retrieve precise, grounded answers in natural language.
+
+
+
+Try to answer:
+
+* What is the project about?
+
+An AI-powered RAG (Retrieval-Augmented Generation) bot integrated directly into Slack and a web dashboard for organization-wide documentation search.
+
+* Who is it for?
+Organizations, engineering teams, and customer support staff needing immediate, reliable answers from technical docs, policies, onboarding guides, and slides.
+
+* What problem does it solve?
+It breaks down information silos (PDFs, docs, presentations scattered across folders) and minimizes interruption costs between team members looking for institutional answers.
+
+* How does it help the user?
+It breaks down information silos (PDFs, docs, presentations scattered across folders) and minimizes interruption costs between team members looking for institutional answers.
+
+Write your answer here.
+
+---
+
+## Approach
+
+Explain how you approached the problem.
+High-quality RAG requires reliable file parsing, semantic chunking boundaries, hybrid keyword + vector search, strict hallucination guards (similarity thresholds), permission scoping, and simple installation.
+
+
+You can include:
+
+* How you understood the problem
+The primary challenge was creating a reliable knowledge assistant that could provide accurate answers while minimizing hallucinations. The solution needed to support multiple document formats, preserve context during retrieval, enforce access controls, and remain lightweight enough to deploy without complex infrastructure.
+
+* What user flow you designed
+Document Upload (Slack or Dashboard)
+→ Intelligent File Parsing
+→ Semantic Chunking & Indexing
+→ Hybrid Search (Vector + Keyword)
+→ Context Retrieval
+→ LLM Response Generation
+→ Source-Cited Answer Returned to Slack
+
+* What features you decided to build
+Multi-format document ingestion and parsing
+Intelligent sentence-aware chunking
+Hybrid vector and keyword search
+Multi-turn conversational context handling
+Access control and permission filtering
+Source citations with similarity confidence scores
+Administrative dashboard for knowledge management
+Slack-native command interface
+
+* How AI is used in your solution
+AI is used throughout the retrieval and response pipeline:
+sentence-transformers (all-MiniLM-L6-v2) generates semantic embeddings for document understanding.
+rank_bm25 provides keyword-based retrieval.
+llama3.2:3b via Ollama generates grounded answers, summaries, tags, and conversational responses.
+Hybrid retrieval ensures answers are based on relevant organizational documents rather than model memory.
+
+* What makes your approach useful or different
+Most RAG systems rely on dedicated vector databases that increase deployment complexity and often require additional setup dependencies.
+Stine Bot uses a custom SQLite-based retrieval architecture combined with Reciprocal Rank Fusion (RRF) to deliver high-quality retrieval while remaining lightweight, portable, and easy to run locally. This significantly reduces setup friction while maintaining strong retrieval performance.
+
+
+
+
+## Tech Stack and Tools Used
+
+Mention the tools, technologies, frameworks, and platforms you used.
+
+
+**Frontend:** React, HTML, CSS, Tailwind, 
+**Backend:**  FastAPI, Python (Uvicorn), Slack Bolt SDK (Socket Mode)
+**Database:**  PostgreSQL,SQLite
+**AI Tools/API:** OpenAI, Slack ,Llama,
+**Cloud/Deployment:** Vercel, Netlify, Render, Railway
+**Other Tools:**VScode, GitHub Copilot, Anti-Gravity CLI ,PyPDF, python-docx, python-pptx, BeautifulSoup4
+
+---
+
+## Key Features
+
+List the key features of your project.
+
+
+
+1. Robust Multi-format File Ingest: Automatic text extraction from PDF, DOCX, PPTX, TXT, MD, and CSV.
+2. SQLite Reciprocal Rank Fusion (RRF) Hybrid Search:  Blends vector semantic matches with BM25 Okapi keywords for precision.
+3. Similarity Refusal Guard Automatic rejection of low-confidence questions :(similarity score < 0.6) with a polite notification.
+4. Access Control Scoping : Personal (owner-only), Team (channel-only), and Org-wide (all users) access boundaries.
+5. Contextual Multi-turn QA: Automatically builds conversational queries using recent context for re-retrieval.
+6. LLM Fallback Search: Falls back to returning raw document text segments if the local LLM is temporarily offline.
+
+## What is Working?
+
+ Complete dependency setup and server execution on Windows without Visual C++ issues.
+* Document upload, tagging, and stats aggregation API endpoints.
+* PDF, DOCX, PPTX, TXT, CSV parsing and indexing.
+* Smart sentence boundaries sliding window chunking.
+* Hybrid Vector & BM25 retrieval with security scope filters.
+* Grounded response generation with citation similarity scores (e.g. `Source: filename.pdf (similarity: 0.85)`).
+* Slack Slash commands: `/ask`, `/upload`, `/summary`, `/kb-help`.
+* Administrative React dashboard UI.
+
+
+## What is Still in Progress?
+
+ Advanced OCR support for scanned images or PDFs containing image text.
+* Adding a dashboard management settings screen to configure access roles.
+
+
+---
+
+## Screenshots or Demo
+
+Add screenshots, demo video link, or deployed project link if available.
+
+**Deployed Link:**
+**Demo Video Link:**
+**Screenshots:**
+
+---
+
+## Challenges Faced
+
+nswlib Build Failure:** Installing `chromadb` on Windows triggers a wheel compilation step for `chroma-hnswlib` requiring C++ Build Tools. This was resolved by designing a custom vector store backed by standard SQLite, utilizing `sentence-transformers` and `rank_bm25` in pure Python, removing compile dependencies.
+* **Dense/Sparse Score Merging:** Normalizing and adding scores from Vector and BM25 is mathematically difficult. We resolved this by implementing Reciprocal Rank Fusion (RRF) to blend rankings rather than scores.
+
+## Learnings
+
+Mention what you learned while building this project.
+
+Write your answer here.
+
+---
+
+## Future Improvements
+
+Mention what you would improve if you had more time.
+
+Write your answer here.
+
+---
+
+## Final Note
+
+Use this space to add anything else you want mentors, judges, or the community to know about your project.
+
+Write your answer here.
