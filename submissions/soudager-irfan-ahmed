@@ -1,0 +1,178 @@
+# Project Name
+
+KnowledgeFlow AI – AI Powered Document Knowledge Assistant
+
+---
+
+## Attendee Details
+
+**Name:** Soudager Irfan Ahmed
+**GitHub Username:** saudagerirfan2005-crypto
+**LinkedIn Profile:** https://www.linkedin.com/in/irfan-ahmed-009093357?utm_source=share_via&utm_content=profile&utm_medium=member_android
+**GitHub Project Repository:** https://github.com/saudagerirfan2005-crypto
+
+---
+
+## Problem Statement Selected
+
+Intelligent Slack Knowledge Base
+
+---
+
+## Project Description
+
+KnowledgeFlow AI is an AI-driven document intelligence solution that transforms uploaded documents into a searchable and interactive knowledge repository.
+
+The platform allows users to upload PDF files and interact with their content through natural language queries. Uploaded documents are processed, segmented into meaningful chunks, embedded into a vector database, and leveraged by AI models to generate accurate, context-aware responses.
+
+The primary goal of the project is to simplify access to information stored within large document collections. Rather than manually browsing extensive documents, users can quickly obtain relevant answers through conversational interactions.
+
+This solution is valuable for organizations, teams, students, researchers, and anyone who frequently works with large volumes of document-based information.
+
+---
+
+## Approach
+
+The application is built using a Retrieval-Augmented Generation (RAG) architecture.
+
+### Workflow
+
+1. User uploads a PDF document.
+2. The backend extracts textual content from the uploaded file.
+3. Extracted text is divided into smaller searchable chunks.
+4. Embeddings are generated and stored within ChromaDB.
+5. User submits a question in natural language.
+6. The system retrieves the most relevant document context.
+7. Gemini generates a contextual AI-powered response.
+
+### Design Decisions
+
+* Developed backend services using FastAPI for modularity and scalability.
+* Chose semantic vector retrieval over traditional keyword-based search.
+* Leveraged embeddings for improved contextual understanding of documents.
+* Prioritized building a complete end-to-end AI workflow before focusing on UI enhancements.
+
+---
+
+## Tech Stack and Tools Used
+
+**Frontend:**
+Next.js, React, Tailwind CSS
+
+**Backend:**
+FastAPI, Python
+
+**Database:**
+ChromaDB (Vector Database)
+
+**AI Tools/API:**
+Google Gemini API
+Sentence Transformers
+
+**Cloud/Deployment:**
+Local Development Environment
+
+**Other Tools:**
+Cursor IDE
+GitHub
+Swagger UI
+Postman
+
+---
+
+## Key Features
+
+1. PDF Upload and Processing
+2. Automated Text Extraction
+3. Smart Document Chunking
+4. Vector Database Storage
+5. Semantic Search Capabilities
+6. AI-Powered Question Answering
+7. FastAPI-Based API Endpoints
+8. Interactive Knowledge Retrieval Pipeline
+
+---
+
+## What is Working?
+
+✅ PDF upload endpoint
+✅ Text extraction from documents
+✅ Document chunk generation
+✅ ChromaDB vector storage integration
+✅ Semantic retrieval workflow
+✅ Gemini-based answer generation
+✅ Question-answering API endpoint
+✅ Swagger interface for API testing
+
+---
+
+## What is Still in Progress?
+
+* Production-ready frontend and backend integration
+* Real-time conversational user interface
+* Source citation support in responses
+* Cloud deployment setup
+* User authentication and authorization
+* Multi-document and session management
+
+---
+
+## Screenshots or Demo
+
+**Deployed Link:** Not deployed yet
+
+**Demo Video Link:** Not available
+
+**Screenshots:**
+
+* Backend upload testing
+* PDF processing results
+* Question-answer API responses
+* Swagger API documentation interface
+* Dashboard UI prototype
+
+---
+
+## Challenges Faced
+
+* Ensuring reliable PDF text extraction across different document formats
+* Setting up and optimizing vector embedding generation
+* Integrating retrieval results with Gemini-generated responses
+* Resolving dependency and package compatibility issues
+* Managing frontend-backend integration within limited development time
+
+---
+
+## Learnings
+
+Throughout the development process, I gained experience in:
+
+* Building scalable APIs with FastAPI
+* Implementing Retrieval-Augmented Generation (RAG) systems
+* Working with vector databases and embeddings
+* Integrating Gemini into AI-powered applications
+* Designing efficient document retrieval pipelines
+* Developing end-to-end AI application architectures
+
+---
+
+## Future Improvements
+
+* Slack integration
+* Support for multiple documents
+* Citation-enabled and source-aware responses
+* Deployment using Vercel and Render
+* Authentication and conversation history tracking
+* Advanced retrieval optimization and reranking techniques
+
+---
+
+## Final Note
+
+KnowledgeFlow AI was developed to showcase how AI can make document-based knowledge more accessible and actionable.
+
+While several enhancements are still under development, the core workflow consisting of document upload, processing, retrieval, and AI-generated responses has been successfully implemented and tested.
+
+This project demonstrates practical AI integration, rapid prototyping, and the development of a complete intelligent knowledge assistant within a limited timeframe.
+
+Thank you for reviewing my submission.
