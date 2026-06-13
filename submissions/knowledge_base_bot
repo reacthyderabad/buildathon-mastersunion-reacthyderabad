@@ -1,0 +1,19 @@
+Project name : Knowledge Base Bot
+Your name : Agarthi V V Sai Manikyacharyulu
+Problem statement selected : Intelligent Slack Knowledge Base
+Project description : AI-powered Slack Knowledge Base BOT.
+Approach : 
+  Fast, Asynchronous Webhooks: Instantly acknowledges Slack events (under 3 seconds) and handles heavy tasks (LLMs, indexing) in the background.
+  Interactive File Ingestion: Extracts text from PDFs, Word docs, or URLs, auto-tags them, and asks the user to set a privacy scope (personal, team, or org) via Slack buttons.
+  Semantic Chunk Indexing: Breaks documents into text chunks and embeds them locally into the Qdrant vector database.
+  Privacy-Preserving Search: Enforces strict access controls dynamically, ensuring users can only retrieve search results they own or have permission to see.
+  Grounded Q&A (RAG): Retrieves relevant context blocks and recent conversation history, then uses an LLM to write a concise, cited response directly back to the Slack thread.
+Tools and technologies used : 
+  Framework: FastAPI (with Uvicorn) for the high-performance async API server.
+  Databases: PostgreSQL (with SQLAlchemy ORM & asyncpg) for message metadata, sessions, and user history; Qdrant (with local disk-based fallback) for high-performance vector search.
+  Embeddings: FastEmbed running the text embedding-3 large model locally to generate dense 3072-dimensional vectors.
+  LLM Engine: OpenRouter API (Google Gemini 2.5 Flash) for grounded document Q&A, auto-tagging, and summarization.
+  Integration & Parsers: Slack Python SDK & Block Kit for messaging/UI; PyPDF, docx2txt, and BeautifulSoup4 for parsing documents and webpages.
+GitHub project link : https://github.com/saiagarthi7/reacthyd
+LinkedIn profile : https://www.linkedin.com/in/saiagarthi/
+GitHub username : saiagarthi7
