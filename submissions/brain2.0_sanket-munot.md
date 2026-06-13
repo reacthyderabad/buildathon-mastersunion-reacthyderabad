@@ -52,11 +52,11 @@ Screenshots or Demo:
 - Demo Video Link: To be added.
 - Screenshots:
   - Ingestion of a document 
-  ![Ingestion Flow](../src/screenshots/ingestion.png)
+  ![Ingestion Flow](https://github.com/sanketmunot/buildathon-mastersunion-reacthyderabad/blob/main/src/screenshots/ingestion.png)
   - User asking a query
-  ![Query Flow](../src/screenshots/query.png)
+  ![Query Flow](https://github.com/sanketmunot/buildathon-mastersunion-reacthyderabad/blob/main/src/screenshots/query.png)
   - User asking more details in thread where the memory is persisted
-  ![Follow-up Query Flow](../src/screenshots/subquery.png)
+  ![Follow-up Query Flow](https://github.com/sanketmunot/buildathon-mastersunion-reacthyderabad/blob/main/src/screenshots/subquery.png)
 
 Learnings:
 - Slack bot integration: Learned how to integrate a Slack app using Bolt with Socket Mode, handle events like mentions/file uploads, and design a smooth chat-first support workflow.
