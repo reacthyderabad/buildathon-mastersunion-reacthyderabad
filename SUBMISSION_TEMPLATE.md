@@ -38,13 +38,13 @@ Mention the title of the problem statement you selected.
 Choose one:
 
 ```txt
-AI Business Growth Copilot
+HR Cost Intelligence Engine
 ```
 
 or
 
 ```txt
-AI Customer Support Intelligence System
+Intelligent Slack Knowledge Base
 ```
 
 ---
