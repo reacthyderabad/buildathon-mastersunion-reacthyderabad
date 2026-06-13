@@ -1,438 +1,511 @@
-Submission: FinOps AI
+# FinOps AI
 
-Project Name
+## Attendee Name
 
-FinOps AI
+**Macherla Yogesh**
 
-Attendee Name
+---
 
-Macherla Yogesh
+## Problem Statement Selected
 
-Problem Statement Selected
+### HR Cost Intelligence / Meeting-to-Project Cost Attribution
 
-HR Cost Intelligence / Meeting-to-Project Cost Attribution
+Organizations lack visibility into how meeting time translates into real HR spend per project. Timesheets are manual and unreliable, while calendar data already captures where employees spend their time. This problem requires connecting:
 
-Organizations lack visibility into how meeting time translates into real HR spend per project. Timesheets are manual and unreliable, while calendar data already captures where people spend their time. This problem requires connecting calendar meetings → AI-powered project attribution → employee cost mapping → executive dashboards and anomaly detection.
+**Calendar Meetings → AI-Powered Project Attribution → Employee Cost Mapping → Executive Insights**
 
-Project Description
+to help leadership understand the true cost of collaboration.
 
-HR Cost Intelligence Engine is an AI-powered FinOps platform that answers one critical business question: "What are our meetings actually costing us, and which projects are driving that spend?"
+---
 
-The platform automatically syncs Google Calendar meetings, uses AI (Google Gemini) to attribute each meeting to one or more projects, calculates cost using employee hourly rates, and surfaces everything on an executive dashboard — with anomaly flags, forecasts, and a voice-enabled AI assistant.
+## Project Description
 
-Demo login: admin@demo.com / demo1234 (works without Google OAuth via seeded data)
+### FinOps AI
 
-Why This Solution Is Useful
+FinOps AI is an AI-powered HR Cost Intelligence platform that helps organizations answer one critical business question:
 
+> **"What are our meetings actually costing us, and which projects are driving that spend?"**
 
+The platform automatically synchronizes Google Calendar meetings, uses AI to attribute meetings to projects, calculates employee costs based on hourly rates, and provides executive dashboards, anomaly detection, forecasting, and AI-powered insights.
 
+Instead of relying on inaccurate manual timesheets, organizations can use existing calendar data as the source of truth for understanding project-level HR spending.
 
+The system provides:
 
+* Automated meeting-to-project attribution
+* HR cost allocation by project
+* Executive cost dashboards
+* Cost anomaly detection
+* Forecasting and recommendations
+* Natural language AI Copilot
+* Voice-enabled FinOps Assistant
+* Human review workflow for low-confidence AI decisions
+* Role-based access control and audit trails
 
+---
 
-Business Pain
+## Why This Solution Is Useful
 
+| Business Challenge                  | FinOps AI Solution                   |
+| ----------------------------------- | ------------------------------------ |
+| No project-level HR cost visibility | Real-time project cost dashboards    |
+| Manual timesheets are inaccurate    | Calendar becomes the source of truth |
+| Budget overruns discovered too late | AI-powered anomaly detection         |
+| Low-confidence AI decisions         | Human review and approval workflow   |
+| Leadership needs quick answers      | AI Copilot and Voice Assistant       |
 
+### Target Users
 
-How We Solve It
+* HR Teams
+* Finance Teams
+* Engineering Managers
+* Delivery Managers
+* Leadership & Executives
+* Operations Teams
 
+---
 
+## Approach
 
+### 1. Data Ingestion Layer
 
+The platform automatically collects meeting information from Google Calendar.
 
-No project-level HR cost visibility
+Features:
 
+* Google OAuth 2.0 Authentication
+* Google Calendar Integration
+* Automated Sync Scheduler
+* Configurable Sync Window (7–90 Days)
+* Demo Mode with Seeded Data
 
+---
 
-Live dashboard with KPIs, trends, and drill-down by role/department
+### 2. AI Attribution Engine
 
+Meeting information is analyzed using AI to determine which project(s) the meeting belongs to.
 
+Features:
 
+* Google Gemini AI Attribution
+* Confidence Scoring
+* Multi-project Allocation Support
+* Keyword-based Fallback Classification
+* Human Review Queue
 
+Example:
 
-Manual timesheets are inaccurate
+Meeting:
+"Frontend Sprint Planning"
 
+AI Output:
 
+```json
+{
+  "project": "Customer Portal",
+  "confidence": 92
+}
+```
 
-Calendar becomes the source of truth
+Low-confidence attributions are automatically routed for human approval.
 
+---
 
+### 3. Cost Intelligence Engine
 
+Meeting costs are calculated using employee hourly rates and meeting duration.
 
+#### Cost Formula
 
-Budget overruns discovered too late
+Meeting Cost =
+Duration × Σ(Employee Hourly Rates) × Allocation Percentage
 
+Features:
 
+* Employee Cost Mapping
+* Project Cost Allocation
+* Department Rollups
+* Role-based Cost Analysis
+* ROI Scoring
 
-Anomaly detection (overrun, leakage, bloat, unattributed)
+---
 
+### 4. Intelligence Layer
 
+The platform continuously analyzes spending patterns.
 
+Features:
 
+#### Anomaly Detection
 
-Low-confidence AI decisions
+Detects:
 
+* Budget Overruns
+* Cost Leakage
+* Team Cost Bloat
+* Unattributed Meetings
 
+#### Forecasting
 
-Human-in-the-loop review queue with approve/override
+Provides:
 
+* 4-Week Cost Forecasts
+* Spending Trends
+* Budget Risk Predictions
 
+#### Recommendations
 
+Generates actionable suggestions to:
 
+* Reduce unnecessary meetings
+* Improve resource allocation
+* Control project costs
 
-Leadership needs quick answers
+---
 
+### 5. AI Copilot
 
+Users can ask natural language questions such as:
 
-AI Copilot + FinOps Voice Assistant for NL queries and navigation
+* Which project cost the most this month?
+* Show engineering costs by project.
+* What anomalies were detected this week?
+* Forecast next month's HR spend.
 
-Target users: HR, Finance, Engineering Managers, and Leadership teams at mid-to-large organizations.
+Features:
 
-Approach
+* Natural Language Queries
+* AI Insights
+* Dynamic Chart Generation
+* Executive Reporting
 
-1. Data ingestion
+---
 
+### 6. FinOps Voice Assistant
 
+A floating AI assistant that supports both voice and text interactions.
 
+Capabilities:
 
+* Navigate application pages
+* Trigger calendar sync
+* Export reports
+* Query project costs
+* Explain anomalies
+* Read insights aloud
 
-Google Calendar OAuth + hourly sync scheduler
+Built using browser-native speech technologies.
 
+---
 
+### 7. Governance & Security
 
-Configurable sync window (7–90 days)
+Enterprise-grade governance features include:
 
+* Role-Based Access Control (RBAC)
+* Salary Rate Masking
+* Audit Logs
+* Attribution Override Tracking
+* Export Tracking
 
+Roles:
 
-Demo mode with 17 seeded meetings (no OAuth required for judges)
+* ADMIN
+* HR
+* FINANCE
+* MANAGER
+* VIEWER
 
-2. AI attribution
+---
 
+## AI Components Used
 
+### Google Gemini
 
+Used for:
 
+* Meeting-to-project attribution
+* Confidence scoring
+* AI Copilot responses
+* Insight generation
 
-Gemini AI classifies meetings to projects with confidence scores
+### AI-Powered Features
 
+* Project Classification
+* Confidence Evaluation
+* Cost Analysis
+* Recommendation Generation
+* Natural Language Query Processing
 
+### Voice AI
 
-Keyword fallback when API key is unavailable
+* Speech-to-Text
+* Text-to-Speech
+* Voice Commands
+* Conversational Navigation
 
+---
 
+## Tools and Technologies Used
 
-Multi-project split support (allocationPct for cross-functional meetings)
+| Layer                | Technology          |
+| -------------------- | ------------------- |
+| Frontend             | React 19            |
+| Language             | TypeScript          |
+| Build Tool           | Vite                |
+| Styling              | Tailwind CSS        |
+| Charts               | Recharts            |
+| Animations           | Framer Motion       |
+| Backend              | Node.js             |
+| API Layer            | Express.js          |
+| ORM                  | Prisma              |
+| Database             | PostgreSQL          |
+| AI                   | Google Gemini       |
+| Authentication       | JWT                 |
+| Security             | bcrypt              |
+| Calendar Integration | Google Calendar API |
+| OAuth                | Google OAuth 2.0    |
+| Voice Features       | Web Speech API      |
+| DevOps               | Docker Compose      |
 
+---
 
+## What Is Already Working
 
-Meetings below 70% confidence → review queue for human approval
+### Core Features
 
-3. Cost engine
+* Google Calendar OAuth Integration
+* Calendar Synchronization
+* AI Meeting Attribution
+* Confidence Scoring
+* Human Review Queue
+* Employee Directory
+* Hourly Rate Management
+* Executive Dashboard
+* Project Cost Breakdown
+* Department Analytics
+* Role-Based Analytics
 
+### Intelligence Features
 
+* Cost Anomaly Detection
+* Forecast Generation
+* Cost Recommendations
+* ROI Analysis
 
+### AI Features
 
+* AI Copilot
+* Natural Language Queries
+* Dynamic Charts
+* Voice Assistant
 
-Meeting Cost = duration × Σ(attendee hourly rates) × allocation %
+### Security & Governance
 
+* RBAC
+* Audit Logging
+* Salary Masking
 
+### Reporting
 
-ROI score heuristic per meeting
+* CSV Export
+* Cost Reports
+* Employee Reports
+* Anomaly Reports
 
+### Demo Environment
 
+* Seeded Employee Data
+* Seeded Project Data
+* Seeded Meeting Data
+* No External Keys Required
 
-Role and department rollups for project drill-down
+---
 
-4. Intelligence layer
+## Architecture
 
+```text
+React Frontend
+      │
+      │ JWT / REST APIs
+      ▼
+Express Backend
+      │
+      ├── Google Calendar API
+      ├── Google OAuth
+      ├── Gemini AI
+      ├── Attribution Engine
+      ├── Cost Engine
+      ├── Forecast Engine
+      ├── Anomaly Engine
+      │
+      ▼
+PostgreSQL Database
+```
 
+Frontend Modules:
 
+* Landing Page
+* Dashboard
+* AI Copilot
+* Review Queue
+* Voice Assistant
+* Analytics
 
+Backend Services:
 
-4-rule anomaly detection engine
+* Authentication Service
+* Calendar Sync Service
+* AI Attribution Service
+* Cost Intelligence Engine
+* Forecast Engine
+* Reporting Service
 
+---
 
+## Demo Access
 
-Rule-based recommendations and 4-week cost forecasts
+### Demo Credentials
 
+Email:
 
+```text
+admin@demo.com
+```
 
-AI Copilot for natural-language Q&A with chart output
+Password:
 
+```text
+demo1234
+```
 
+The demo works without Google OAuth and includes seeded project and meeting data for evaluation.
 
-FinOps Assistant (floating chatbot) with text + voice — navigate app, sync calendar, export CSV
+---
 
-5. Governance
+## How To Run Locally
 
+### Start PostgreSQL
 
-
-
-
-RBAC: ADMIN / HR / FINANCE / MANAGER / VIEWER
-
-
-
-Salary rate masking by role
-
-
-
-Full audit log for attribution overrides and exports
-
-Tools and Technologies Used
-
-
-
-
-
-
-
-Layer
-
-
-
-Stack
-
-
-
-
-
-Frontend
-
-
-
-React 19, TypeScript, Vite, Tailwind CSS, Recharts, Framer Motion
-
-
-
-
-
-Backend
-
-
-
-Node.js, Express, TypeScript, Prisma ORM
-
-
-
-
-
-Database
-
-
-
-PostgreSQL
-
-
-
-
-
-AI
-
-
-
-Google Gemini (meeting attribution + copilot Q&A)
-
-
-
-
-
-Integrations
-
-
-
-Google Calendar API, Google OAuth 2.0
-
-
-
-
-
-Voice
-
-
-
-Web Speech API (browser-native STT + TTS)
-
-
-
-
-
-Auth
-
-
-
-JWT, bcrypt
-
-
-
-
-
-DevOps
-
-
-
-Docker Compose (Postgres + optional full stack)
-
-What Is Already Working
-
-
-
-
-
-✅ Google Calendar OAuth + sync API + sync status dashboard
-
-
-
-✅ AI meeting attribution with confidence scoring and review queue
-
-
-
-✅ Employee directory with hourly rates and bulk rate updates
-
-
-
-✅ Executive dashboard (KPIs, cost trends, project breakdown)
-
-
-
-✅ Project drill-down by role/department with meeting ROI
-
-
-
-✅ Anomaly detection (4 types) with dismiss flow
-
-
-
-✅ AI Copilot — NL queries with bar chart responses
-
-
-
-✅ FinOps Voice Assistant — navigate, query, sync, export via text/voice
-
-
-
-✅ RBAC with rate masking and audit logs
-
-
-
-✅ CSV export (projects, anomalies, employees)
-
-
-
-✅ Recommendations and 4-week forecasts
-
-
-
-✅ Demo seed data — fully functional without external API keys
-
-What We Plan to Improve Next
-
-
-
-
-
-Outlook / Microsoft Graph calendar integration
-
-
-
-HRMS / payroll connector for live rate sync
-
-
-
-Slack/email anomaly notifications
-
-
-
-Vector DB RAG for richer copilot context
-
-
-
-SSO (Google/Microsoft login)
-
-
-
-Scheduled executive email digests
-
-
-
-Production deployment (Railway / Vercel / AWS)
-
-How to Run Locally
-
-# 1. Start database
+```bash
 docker compose up -d postgres
+```
 
-# 2. Backend
+### Backend
+
+```bash
 cd backend
+
 npx prisma db push
+
 npm run prisma:seed
-npm run dev
 
-# 3. Frontend (new terminal)
+npm run dev
+```
+
+### Frontend
+
+```bash
 cd ..
+
 npm install
+
 npm run dev
+```
 
-Open http://localhost:5173 → Sign in with admin@demo.com / demo1234
+Open:
 
-Architecture
+```text
+http://localhost:5173
+```
 
-React Frontend ──JWT/REST──► Express Backend ──► PostgreSQL
-  ├── Landing Page                    ├── Google Calendar API
-  ├── Executive Dashboard               ├── Gemini AI (attribution)
-  ├── AI Review Queue                   ├── Anomaly / Forecast / Copilot
-  ├── FinOps Voice Assistant            └── Demo seed (17 meetings)
-  └── AI Copilot Page
+Login:
 
-Links
+```text
+admin@demo.com
+demo1234
+```
 
+---
 
+## Future Improvements
 
+Planned Version 2 Features:
 
+### Integrations
 
+* Microsoft Outlook Integration
+* Microsoft Graph API Support
+* HRMS Integrations
+* Payroll System Integrations
 
+### Notifications
 
+* Slack Alerts
+* Email Notifications
+* Executive Cost Digests
 
+### AI Enhancements
 
+* Vector Database Integration
+* RAG-Powered Copilot
+* Advanced Forecasting Models
+* Cost Optimization Suggestions
 
+### Enterprise Features
 
+* SSO Authentication
+* Google Workspace Login
+* Microsoft Login
+* Advanced Audit Reporting
 
+### Deployment
 
+* Railway Deployment
+* Vercel Deployment
+* AWS Infrastructure
+* CI/CD Pipelines
 
+---
 
-
-
-GitHub Project Repository
-
-
+## GitHub Project Repository
 
 https://github.com/Yogesh-101/FinOps-AI
 
+---
 
-
-
-
-GitHub Username
-
-
+## GitHub Username
 
 @Yogesh-101
 
+---
 
-
-
-
-LinkedIn Profile
-
-
+## LinkedIn Profile
 
 https://www.linkedin.com/in/macherla-yogesh-02a5422bb/
 
-Work in Progress Disclaimer
+---
 
-Core MVP is fully functional with demo data. Google Calendar OAuth and Gemini AI require environment keys for live production use. Outlook integration and HRMS connectors are planned for V2.
+## Work In Progress Disclaimer
 
-Pull Request Title
+The core MVP is fully functional and demonstrates the complete HR Cost Intelligence workflow using seeded data.
 
+Some production integrations such as Google OAuth production credentials, Outlook integration, HRMS connectors, and enterprise SSO are planned for future releases.
+
+The project will continue evolving beyond the buildathon submission.
+
+---
+
+## Pull Request Title
+
+```text
 Submission: FinOps AI - Macherla Yogesh
+```
 
-Built for React Hyderabad × Masters' Union AI Buildathon — June 2026
+---
+
+## Closing Note
+
+FinOps AI transforms calendar activity into actionable financial intelligence by combining AI-powered project attribution, cost analytics, forecasting, anomaly detection, and conversational interfaces.
+
+The platform helps organizations move beyond manual timesheets and gain real-time visibility into where employee time and project budgets are actually being spent.
