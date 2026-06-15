@@ -50,13 +50,13 @@ To enhance decision-making, we also introduced a real-time meeting cost ticker a
 
 **Backend:** FastAPI (Python)
 
-**Database:** PostgreSQL / Supabase
+**Database:** PostgreSQL 
 
 **AI Tools/API:** Gemini API
 
-**Cloud/Deployment:** Vercel, Render
+**Cloud/Deployment:** Vercel
 
-**Other Tools:** Bolt.new, GitHub, Postman, Docker
+**Other Tools:** GitHub, Postman, Docker
 
 ---
 
