@@ -38,11 +38,11 @@ AgentSlack is a robust, AI-powered Knowledge Base layer natively integrated into
 Our approach focused on building a **decoupled, high-performance ETL pipeline** to handle high-volume ingestion (50+ documents concurrently) without blocking user interaction.
 
 1. **Two-Phase Ingestion:**
-   - **Phase 1 (Extraction):** Independent workers capture Slack file events and parse text/images using PyMuPDF and Vision stubs.
+   - **Phase 1 (Extraction):** Independent workers capture Slack file events and parse text/images using .
    - **Phase 2 (Transformation):** Semantic chunking with overlapping windows (500 tokens) ensures context is never lost at boundaries. Chunks are auto-tagged and loaded into a vector store.
 2. **Scoped Retrieval:** We implemented strict Access Control metadata (Personal, Team, Org-wide scopes) at the ChromaDB layer to ensure data privacy.
 3. **Conversational Multi-Turn Memory:** Uses Slack thread timestamps as session identifiers to allow follow-up questions while maintaining grounding in the uploaded data.
-4. **Local-First AI:** Optimized the system to run on local Hugging Face models (Flan-T5, BGE) to ensure low latency and high reliability during local iteration.
+4. **Local-First AI:** Optimized the system to run on models (Flan to ensure low latency and high reliability during local iteration.
 
 ---
 
@@ -50,10 +50,9 @@ Our approach focused on building a **decoupled, high-performance ETL pipeline** 
 
 **Frontend:** React, Vite, Tailwind CSS, Three.js (for Reality Dashboard visualization)
 **Backend:** Python 3.12, Flask, Slack Bolt SDK
-**Database:** ChromaDB (Vector DB), SQLite (Chat History)
-**AI Tools/API:** Hugging Face (Sentence Transformers, Flan-T5), PyMuPDF (Extraction), GLiNER (Entity Extraction)
-**Other Tools:** python-dotenv, task_manager (Custom Asynchronous Queue)
-
+**Database:**
+**AI Tools/API:** 
+**Other Tools:** 
 ---
 
 ## Key Features
@@ -63,8 +62,8 @@ Our approach focused on building a **decoupled, high-performance ETL pipeline** 
 3. **Automated Summarization:** Request concise summaries of uploaded organizational knowledge using the `/kb-search` command or mentions.
 4. **Multi-turn Dialogue:** Maintains conversational context within Slack threads for logical follow-up questions.
 5. **Interactive Reality Dashboard:** A 3D/React frontend built with Three.js to visualize knowledge health and system metrics.
-6. **Shadow Brain (Self-Healing):** Autonomous background audits that identify knowledge gaps from failed queries and generate synthetic knowledge patches.
-7. **Hybrid Retrieval:** Combining BM25 keyword matching with Semantic vector search for surgical precision.
+6. **Shadow Brain (Self-Healing):** 
+7. **Hybrid Retrieval:** Cion.
 8. **Automated FAQ Generation:** Automatically mining documents to create Q&A pairs, improving future retrieval accuracy.
 
 ---
@@ -79,9 +78,9 @@ Our approach focused on building a **decoupled, high-performance ETL pipeline** 
 - ✅ **Asynchronous Task Queue:** Handles heavy document processing in background threads without blocking Slack.
 - ✅ **3D Visualization:** Initial React-Three-Fiber dashboard for system monitoring.
 
-- ✅ **Advanced Vision Integration (Florence-2):** Full implementation for extracting structured data from complex tables and charts.
-- ✅ **Multi-lingual Support:** Native translation for Indic languages (Hindi, Telugu, etc.) using IndicTrans2.
-- ✅ **Advanced Dashboard Metrics:** Real-time synchronization between the Python backend and the React visualization layer.
+- ✅ **Advanced Vision Integration ** Full implementation for extracting structured data from complex tables and charts.
+- ✅ **Multi-lingual Support:** Native translation for Indic languages (Hindi, Telugu, etc.)
+- ✅ **Advanced Dashboard Metrics:** Real-time synchronization between the Python backend and the React visualization la
 
 
 
@@ -124,13 +123,7 @@ Our approach focused on building a **decoupled, high-performance ETL pipeline** 
 
 ---
 
-## Future Improvements
 
-- Implementation of a **Hybrid Search** strategy (BM25 + Semantic) for even higher keyword precision.
-- Deployment via **Docker** for standardized organizational rollout.
-- Integration with **Vertex AI** for enterprise-scale reasoning beyond local model limits.
-
----
 
 ## Final Note
 
