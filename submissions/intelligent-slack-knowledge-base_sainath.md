@@ -103,7 +103,7 @@ controls, OCR, audit dashboards, and a React administration interface.
 
 ## Screenshots or Demo
 
-**Deployed Link:** Local working prototype  
+**Deployed Link:** https://intelligent-slack-knowledge-base.onrender.com  
 **Demo Video Link:** To be added  
 **Live Evidence:** See `docs/EVALUATION_AUDIT.md` in the project repository
 
