@@ -1,0 +1,95 @@
+Project Name
+SlackAssist-AI
+
+Attendee Details
+Name: Md Zia Faraz
+GitHub Username: https://github.com/ZFaraz09 
+LinkedIn Profile: linkedin.com/in/mohammed-zia-faraz-a2845829b
+GitHub Project Repository: Your project repository link
+
+Problem Statement Selected
+
+Intelligent Slack Knowledge Base
+Project Description
+Our project is an AI-powered Slack Knowledge Base Assistant. It helps employees upload documents, ask questions, summarize content, and retrieve company knowledge directly inside Slack.
+It is built for employees, teams, managers, and new joiners who need quick access to company information. It solves the problem of scattered knowledge across documents, Slack threads, URLs, and files. The assistant helps users save time by giving clear, cited answers without needing to search manually or interrupt teammates.
+
+Try to answer:
+
+What is the project about?
+This project is about building an AI-powered Slack Knowledge Base Assistant that helps users search, summarize, and retrieve company information directly inside Slack.
+Who is it for?
+It is for employees, team members, managers, admins, and new joiners who need quick access to organizational knowledge.
+What problem does it solve?
+It solves the problem of company information being scattered across documents, Slack messages, URLs, and files, making it hard to find the right answer quickly.
+How does it help the user?
+It helps users by allowing them to ask questions in natural language, upload documents, get summaries, and receive accurate answers with source references without leaving Slack.
+
+
+Approach
+We understood the problem as a knowledge discovery issue inside organizations. Important information exists, but it is difficult to find quickly.
+Our user flow starts with a user uploading a document, URL, or Slack thread. The system extracts the content, stores it in a searchable knowledge base, and allows users to ask natural language questions. The assistant then retrieves relevant information and generates an answer with source references.
+We decided to build features like document upload, Q&A, summarization, multi-turn chat, auto-tagging, and scoped access. AI is used for summarizing documents, understanding user questions, generating answers, creating tags, and retrieving relevant knowledge. The approach is useful because it works inside Slack, where employees already communicate.You can include:
+
+How you understood the problem: Company knowledge is scattered across documents, links, and Slack messages, making it hard for employees to find answers quickly.
+
+What user flow you designed: A user uploads content or asks a question in Slack, and the assistant searches the knowledge base to return a clear answer with sources.
+
+What features you decided to build: We decided to build document upload, natural language Q&A, summarization, citations, auto-tagging, and access-based knowledge scopes.
+
+How AI is used in your solution: AI is used to understand questions, summarize documents, search relevant content, generate answers, and create automatic tags.
+
+What makes your approach useful or different: The solution works directly inside Slack, so users can access company knowledge without switching tools or interrupting teammates.
+
+Tech Stack and Tools Used
+Frontend: React, HTML, CSS, Tailwind CSS, Material UI
+Backend: Node.js, Express.js / FastAPI
+Database: MongoDB / PostgreSQL / Supabase
+AI Tools/API: OpenAI, Gemini, Claude, LangChain, Hugging Face
+Cloud/Deployment: Vercel, Netlify, Render, Railway, AWS, GCP
+Other Tools: Slack API, Postman, Docker, Figma, GitHub, Cursor, GitHub Copilot
+
+Key Features
+Document upload and ingestion
+Natural language question answering
+AI-powered document summarization
+Cited answers from uploaded content
+Multi-turn conversation support
+Personal, team, and organization knowledge scopes
+Auto-tagging and categorization
+Slack bot commands
+Admin dashboard for document and access management
+
+What is Working?
+The core concept and system design are ready. The planned working features include document upload, content extraction, AI-based summarization, natural language Q&A, and Slack-based interaction. The assistant can be designed to answer questions from indexed documents and provide source citations.
+
+What is Still in Progress?
+
+The remaining work includes full Slack app integration, production-level access control, advanced analytics, improved citation accuracy, deployment, testing with real documents, and integration with tools like Google Drive, Notion, or Confluence.
+
+Write your answer here.
+
+Screenshots or Demo
+Add screenshots, demo video link, or deployed project link if available.
+
+Deployed Link: Demo Video Link: Screenshots:
+
+Challenges Faced
+Mention any challenges you faced while building this project.
+
+Write your answer here.
+
+Learnings
+Mention what you learned while building this project.
+
+Write your answer here.
+
+Future Improvements
+Mention what you would improve if you had more time.
+
+Write your answer here.
+
+Final Note
+Use this space to add anything else you want mentors, judges, or the community to know about your project.
+
+The final outcome should be a working AI-powered Slack assistant that helps employees find information faster, understand documents quickly, and reuse company knowledge effectively. It should feel like a reliable workplace knowledge companion that can answer questions, summarize information, cite sources, and respect access permissions.
